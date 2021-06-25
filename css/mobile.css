@@ -1,0 +1,23 @@
+:root {
+  --green: #35df87;
+  --blue: #01b7ee;
+  --turquoise: #32e1c1;
+  --yellow: #d4fd02;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  margin: 1em auto;
+  text-align: center;
+  font-size: 2em;
+  color: var(--turquoise);
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-color: var(--turquoise);
+}
