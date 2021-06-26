@@ -9,12 +9,22 @@
     width: 75px;
   }
 
-  button {
+  #addBook {
     font-size: 2em;
   }
 
   .addBookContainer {
     border: 2px solid white;
-    width: 350px;
+    width: 500px;
+    height: 300px;
+  }
+
+  .lineItem {
+    font-size: 2em;
+    margin: 20px auto;
+  }
+
+  input {
+    width: 300px;
   }
 }

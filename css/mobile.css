@@ -26,7 +26,7 @@ hr {
   background-color: var(--turquoise);
 }
 
-button {
+#addBook {
   font-family: "Ubuntu", sans-serif;
   position: fixed;
   bottom: 1em;
@@ -45,9 +45,11 @@ button {
 
 .addBookContainer {
   position: relative;
-  top: 8em;
+  top: 5em;
   margin: auto;
   width: 80%;
+  padding-bottom: 20px;
+  border: 2px solid white;
 }
 
 .lineItem {
@@ -56,4 +58,29 @@ button {
   font-family: "Ubuntu", sans-serif;
   margin: 5px;
   color: white;
+}
+
+.addBookButtonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.addBookButtons {
+  border: none;
+  margin-top: 1em;
+  border-radius: 0.25em;
+  font-size: 1em;
+  padding: 5px;
+}
+
+/* .readInputContainer {
+
+} */
+
+#cancelAddBook {
+  background-color: #e60000;
+}
+
+#applyAddBook {
+  background-color: var(--green);
 }
