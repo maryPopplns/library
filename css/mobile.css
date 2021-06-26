@@ -60,6 +60,10 @@ hr {
   color: white;
 }
 
+input {
+  width: 150px;
+}
+
 .addBookButtonContainer {
   display: flex;
   justify-content: space-around;
