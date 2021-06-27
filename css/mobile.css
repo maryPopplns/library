@@ -17,13 +17,13 @@ h1 {
   text-align: center;
   font-size: 2em;
   font-family: "Poppins", sans-serif;
-  color: var(--turquoise);
+  color: var(--green);
 }
 
 hr {
   border: 0;
   height: 3px;
-  background-color: var(--turquoise);
+  background-color: var(--green);
 }
 
 #addBook {
@@ -44,12 +44,13 @@ hr {
 }
 
 .addBookContainer {
+  display: none;
   position: relative;
   top: 5em;
   margin: auto;
-  width: 80%;
   padding-bottom: 20px;
-  border: 2px solid white;
+  width: 80%;
+  border: 1px solid var(--green);
 }
 
 .lineItem {
@@ -77,14 +78,42 @@ input {
   padding: 5px;
 }
 
-/* .readInputContainer {
-
-} */
-
 #cancelAddBook {
-  background-color: #e60000;
+  background-color: #cb353f;
 }
 
 #applyAddBook {
   background-color: var(--green);
+}
+
+#titleLabel {
+  color: #35df79;
+}
+
+#titleInput {
+  background-color: #35df79;
+}
+
+#authorLabel {
+  color: #62e858;
+}
+
+#authorInput {
+  background-color: #62e858;
+}
+
+#pagesLabel {
+  color: #8df038;
+}
+
+#pagesInput {
+  background-color: #8df038;
+}
+
+#readLabel {
+  color: #b4f71b;
+}
+
+#readInput {
+  background-color: #b4f71b;
 }

@@ -32,7 +32,9 @@ function main() {
     INPUT_CONTAINERS[i].setAttribute("class", "lineItem");
     INPUT_CONTAINERS[i].setAttribute("id", IDS[i]);
     INPUTS[i].setAttribute("name", IDS[i]);
+    INPUTS[i].setAttribute("id", IDS[i] + "Input");
     LABELS[i].setAttribute("for", IDS[i]);
+    LABELS[i].setAttribute("id", IDS[i] + "Label");
     if (IDS[i] === "read") {
       INPUTS[i].setAttribute("type", "checkbox");
     } else {
