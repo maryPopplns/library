@@ -34,4 +34,28 @@
   input {
     width: 300px;
   }
+
+  #bookContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .book {
+    width: 300px;
+    height: 200px;
+  }
+
+  .infoContainer {
+    margin: 10px 0;
+  }
+
+  .bookButtonContainer {
+    width: auto;
+  }
+
+  ol {
+    justify-content: space-between;
+    width: 300px;
+    height: 150px;
+  }
 }

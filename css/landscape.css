@@ -5,4 +5,9 @@
     padding: 0;
     border: none;
   }
+
+  .book {
+    width: 70vw;
+    margin: 10px auto;
+  }
 }

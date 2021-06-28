@@ -14,8 +14,6 @@ function cancelAddBookHandler(e) {
   document.querySelector("#pagesInput").value = "";
   document.querySelector("#readInput").checked = false;
 
-  // console.log(books);
-
   renderBooks();
 }
 
