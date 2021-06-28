@@ -1,8 +1,12 @@
 import { books } from "../logic/books/bookStore.js";
-
-let count = 0;
+import { deleteHandler } from "../logic/handlers/deleteHandler.js";
+import { editHandler } from "../logic/handlers/editHandler.js";
 
 function renderBooks() {
+  const BOOK_CONTAINER_CURRENT = document.querySelector("#bookContainer");
+  if (BOOK_CONTAINER_CURRENT !== null) {
+    BOOK_CONTAINER_CURRENT.parentNode.removeChild(BOOK_CONTAINER_CURRENT);
+  }
   const MAIN = document.querySelector("main");
   const BOOK_CONTAINER = document.createElement("div");
 
@@ -30,7 +34,7 @@ function renderBooks() {
     const READ_LABEL = document.createElement("div");
 
     BOOK.setAttribute("class", "book");
-    BOOK.setAttribute("id", count);
+    // BOOK.setAttribute("id", count);
     BOOK_BUTTON_CONTAINER.setAttribute("class", "bookButtonContainer");
     TITLE_CONTAINER.setAttribute("class", "infoContainer");
     AUTHOR_CONTAINER.setAttribute("class", "infoContainer");
@@ -44,6 +48,8 @@ function renderBooks() {
     EDIT.setAttribute("class", "editIcon");
     DELETE.setAttribute("src", "../../img/delete.png");
     DELETE.setAttribute("class", "deleteIcon");
+    EDIT.setAttribute("id", e.count);
+    DELETE.setAttribute("id", e.count);
 
     TITLE.textContent = e.title;
     AUTHOR.textContent = e.author;
@@ -76,7 +82,8 @@ function renderBooks() {
     READ_CONTAINER.append(READ_LABEL);
     READ_CONTAINER.append(READ);
 
-    count++;
+    EDIT.addEventListener("click", editHandler);
+    DELETE.addEventListener("click", deleteHandler);
   });
 }
 
