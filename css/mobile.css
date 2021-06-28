@@ -6,6 +6,10 @@
   --green: #32c97b;
   --blue: #01b7ee;
   --yellow: #d4fd02;
+  --read: #b4f71b;
+  --pages: #8df038;
+  --author: #62e858;
+  --title: #35df79;
 }
 
 body {
@@ -46,7 +50,7 @@ hr {
 .addBookContainer {
   display: none;
   position: relative;
-  top: 5em;
+  top: 15vh;
   margin: auto;
   padding: 40px 20px;
   width: 80%;
@@ -78,6 +82,14 @@ input {
   padding: 5px;
 }
 
+input {
+  border: none;
+}
+
+input[type="checkbox"] {
+  cursor: grab;
+}
+
 #cancelAddBook {
   background-color: #cb353f;
 }
@@ -87,33 +99,33 @@ input {
 }
 
 #titleLabel {
-  color: #35df79;
+  color: var(--title);
 }
 
 #titleInput {
-  background-color: #35df79;
+  background-color: var(--title);
 }
 
 #authorLabel {
-  color: #62e858;
+  color: var(--author);
 }
 
 #authorInput {
-  background-color: #62e858;
+  background-color: var(--author);
 }
 
 #pagesLabel {
-  color: #8df038;
+  color: var(--pages);
 }
 
 #pagesInput {
-  background-color: #8df038;
+  background-color: var(--pages);
 }
 
 #readLabel {
-  color: #b4f71b;
+  color: var(--read);
 }
 
 #readInput {
-  background-color: #b4f71b;
+  background-color: var(--read);
 }
