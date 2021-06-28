@@ -1,6 +1,5 @@
 import { books } from "../books/bookStore.js";
 import { renderBooks } from "../../UI/books.js";
-// import { count } from "../../UI/books.js";
 
 function cancelAddBookHandler(e) {
   e.preventDefault();
@@ -15,8 +14,7 @@ function cancelAddBookHandler(e) {
   document.querySelector("#pagesInput").value = "";
   document.querySelector("#readInput").checked = false;
 
-  console.log(books);
-  console.log(count);
+  // console.log(books);
 
   renderBooks();
 }

@@ -25,4 +25,4 @@ function renderBooks() {
   });
 }
 
-export { renderBooks, count };
+export { renderBooks };
