@@ -6,6 +6,10 @@
     border: none;
   }
 
+  .addBookButtonContainer {
+    margin-top: 20px;
+  }
+
   .book {
     width: 70vw;
     margin: 10px auto;

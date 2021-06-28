@@ -4,12 +4,9 @@
 :root {
   --turquoise: #32e1c1;
   --green: #32c97b;
+  --green-input: rgb(104, 186, 143);
   --blue: #01b7ee;
   --yellow: #d4fd02;
-  --read: #b4f71b;
-  --pages: #8df038;
-  --author: #62e858;
-  --title: #35df79;
 }
 
 body {
@@ -67,6 +64,7 @@ hr {
 
 input {
   width: 150px;
+  font-weight: 700;
 }
 
 .addBookButtonContainer {
@@ -98,36 +96,20 @@ input[type="checkbox"] {
   background-color: var(--green);
 }
 
-#titleLabel {
-  color: var(--title);
+.lineItem {
+  color: var(--green);
 }
 
 #titleInput {
-  background-color: var(--title);
-}
-
-#authorLabel {
-  color: var(--author);
+  background-color: var(--green-input);
 }
 
 #authorInput {
-  background-color: var(--author);
-}
-
-#pagesLabel {
-  color: var(--pages);
+  background-color: var(--green-input);
 }
 
 #pagesInput {
-  background-color: var(--pages);
-}
-
-#readLabel {
-  color: var(--read);
-}
-
-#readInput {
-  background-color: var(--read);
+  background-color: var(--green-input);
 }
 
 #bookContainer {
