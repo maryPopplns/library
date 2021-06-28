@@ -40,16 +40,20 @@ function renderBooks() {
     AUTHOR_CONTAINER.setAttribute("class", "infoContainer");
     PAGES_CONTAINER.setAttribute("class", "infoContainer");
     READ_CONTAINER.setAttribute("class", "infoContainer");
-    TITLE.setAttribute("class", "bookTitle");
-    AUTHOR.setAttribute("class", "bookAuthor");
-    PAGES.setAttribute("class", "bookPages");
-    READ.setAttribute("class", "bookRead");
+    TITLE.setAttribute("class", "bookTitle userInput");
+    AUTHOR.setAttribute("class", "bookAuthor userInput");
+    PAGES.setAttribute("class", "bookPages userInput");
+    READ.setAttribute("class", "bookRead userInput");
     EDIT.setAttribute("src", "../../img/edit.png");
     EDIT.setAttribute("class", "editIcon");
     DELETE.setAttribute("src", "../../img/delete.png");
     DELETE.setAttribute("class", "deleteIcon");
     EDIT.setAttribute("id", e.count);
     DELETE.setAttribute("id", e.count);
+    TITLE_LABEL.setAttribute("class", "titleLabel");
+    AUTHOR_LABEL.setAttribute("class", "authorLabel");
+    PAGES_LABEL.setAttribute("class", "pagesLabel");
+    READ_LABEL.setAttribute("class", "readLabel");
 
     TITLE.textContent = e.title;
     AUTHOR.textContent = e.author;

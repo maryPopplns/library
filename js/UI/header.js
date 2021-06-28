@@ -9,7 +9,7 @@ function header() {
   HEADER.textContent = "Reading List";
 
   BODY.insertBefore(HEADER, APP);
-  HEADER.append(HORIZONTAL_RULE);
+  BODY.insertBefore(HORIZONTAL_RULE, APP);
 }
 
 export { header };

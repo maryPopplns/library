@@ -1,13 +1,9 @@
 @media (max-height: 450px) {
   .addBookContainer {
     top: 5vh;
-    width: 60%;
     padding: 0;
     border: none;
-  }
-
-  .addBookButtonContainer {
-    margin-top: 20px;
+    max-width: 60vw;
   }
 
   .book {

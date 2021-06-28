@@ -4,9 +4,9 @@
 :root {
   --turquoise: #32e1c1;
   --green: #32c97b;
-  --green-input: rgb(104, 186, 143);
+  --green-input: rgb(142, 183, 161);
   --blue: #01b7ee;
-  --yellow: #d4fd02;
+  --yellow: #e9fb91;
 }
 
 body {
@@ -22,6 +22,7 @@ h1 {
 }
 
 hr {
+  margin: 20px 0;
   border: 0;
   height: 3px;
   background-color: var(--green);
@@ -64,7 +65,7 @@ hr {
 
 input {
   width: 150px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .addBookButtonContainer {
@@ -125,27 +126,35 @@ input[type="checkbox"] {
   flex-direction: column;
   padding: 10px;
   margin: 10px;
-  border: 1px solid white;
+  border: 1px solid var(--turquoise);
 }
 
 .infoContainer {
   display: flex;
   justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--turquoise);
+}
+
+.userInput {
+  color: var(--yellow);
 }
 
 .bookButtonContainer {
-  width: 90vw;
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
+  user-select: none;
 }
 
 .editIcon {
   height: 20px;
   width: 20px;
+  cursor: pointer;
 }
 
 .deleteIcon {
   height: 20px;
   width: 20px;
+  cursor: pointer;
 }
