@@ -48,9 +48,9 @@ hr {
   position: relative;
   top: 5em;
   margin: auto;
-  padding-bottom: 20px;
+  padding: 40px 20px;
   width: 80%;
-  border: 1px solid var(--green);
+  border: 3px solid var(--green);
 }
 
 .lineItem {
