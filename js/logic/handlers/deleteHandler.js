@@ -1,5 +1,6 @@
 import { books } from "../books/bookStore.js";
 import { renderBooks } from "../../UI/books.js";
+import { deletePage } from "../../UI/delete.js";
 
 function deleteHandler(event) {
   for (let i = 0; i < books.length; i++) {
