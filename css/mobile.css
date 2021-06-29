@@ -59,6 +59,10 @@ hr {
   border: 3px solid var(--add);
 }
 
+button {
+  cursor: pointer;
+}
+
 .editForm {
   position: relative;
   top: 15vh;
@@ -117,6 +121,9 @@ input {
 
 input {
   border: none;
+  border-radius: 0.25em;
+  text-indent: 10px;
+  outline: none;
 }
 
 input[type="checkbox"] {

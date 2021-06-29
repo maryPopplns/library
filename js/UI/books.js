@@ -44,10 +44,8 @@ function renderBooks() {
     AUTHOR.setAttribute("class", "bookAuthor userInput");
     PAGES.setAttribute("class", "bookPages userInput");
     READ.setAttribute("class", "bookRead userInput");
-    // EDIT.setAttribute("src", "/../../img/edit.png");
     EDIT.setAttribute("src", "https://i.ibb.co/SsCgqzv/edit.png");
     EDIT.setAttribute("class", "editIcon");
-    // DELETE.setAttribute("src", "/../../img/delete.png");
     DELETE.setAttribute("src", "https://i.ibb.co/2N59FGH/delete.png");
     DELETE.setAttribute("class", "deleteIcon");
     EDIT.setAttribute("id", e.count);
