@@ -13,6 +13,16 @@
     font-size: 2em;
   }
 
+  .editIcon {
+    height: 25px;
+    width: 25px;
+  }
+
+  .deleteIcon {
+    height: 25px;
+    width: 25px;
+  }
+
   .addBookContainer {
     width: 500px;
     height: 300px;

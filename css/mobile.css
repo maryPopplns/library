@@ -22,14 +22,14 @@ h1 {
   text-align: center;
   font-size: 2em;
   font-family: "Poppins", sans-serif;
-  color: var(--green);
+  color: var(--turquoise);
 }
 
 hr {
   margin: 20px 0;
   border: 0;
   height: 3px;
-  background-color: var(--green);
+  background-color: var(--turquoise);
 }
 
 #addBook {
@@ -192,8 +192,8 @@ input[type="checkbox"] {
 }
 
 .deleteIcon {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   cursor: pointer;
 }
 

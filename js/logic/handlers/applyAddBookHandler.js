@@ -23,8 +23,8 @@ function applyAddBookHandler(e) {
   document.querySelector("#readInput").checked = false;
   ADD_BOOK_CONTAINER.style.display = "none";
   ADD_BOOK.style.display = "block";
-  HEADER.style.color = "#32c97b";
-  HR.style.backgroundColor = "#32c97b";
+  HEADER.style.color = "#32e1c1";
+  HR.style.backgroundColor = "#32e1c1";
 
   books.push(new Book(TITLE, AUTHOR, PAGES, READ, count));
 

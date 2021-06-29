@@ -11,8 +11,8 @@ function cancelAddBookHandler(e) {
   ADD_BOOK_CONTAINER.style.display = "none";
   ADD_BOOK.style.display = "block";
   HEADER.textContent = "Reading List";
-  HEADER.style.color = "#32c97b";
-  HR.style.backgroundColor = "#32c97b";
+  HEADER.style.color = "#32e1c1";
+  HR.style.backgroundColor = "#32e1c1";
 
   document.querySelector("#titleInput").value = "";
   document.querySelector("#authorInput").value = "";
