@@ -5,11 +5,14 @@ function cancelAddBookHandler(e) {
   e.preventDefault();
 
   const HEADER = document.querySelector("h1");
+  const HR = document.querySelector("hr");
   const ADD_BOOK_CONTAINER = document.querySelector(".addBookContainer");
   const ADD_BOOK = document.querySelector("#addBook");
   ADD_BOOK_CONTAINER.style.display = "none";
   ADD_BOOK.style.display = "block";
   HEADER.textContent = "Reading List";
+  HEADER.style.color = "#32c97b";
+  HR.style.backgroundColor = "#32c97b";
 
   document.querySelector("#titleInput").value = "";
   document.querySelector("#authorInput").value = "";
