@@ -7,6 +7,7 @@
   --green-input: rgb(142, 183, 161);
   --blue: #01b7ee;
   --yellow: #e9fb91;
+  --edit: #e9fb91;
 }
 
 body {
@@ -55,12 +56,29 @@ hr {
   border: 3px solid var(--green);
 }
 
+.editForm {
+  position: relative;
+  top: 15vh;
+  margin: auto;
+  padding: 40px 20px;
+  width: 80%;
+  border: 3px solid var(--edit);
+}
+
 .lineItem {
   display: flex;
   justify-content: space-between;
   font-family: "Ubuntu", sans-serif;
   margin: 5px;
-  color: white;
+  color: var(--green);
+}
+
+.editItem {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+  margin: 5px;
+  color: var(--edit);
 }
 
 input {
@@ -73,7 +91,21 @@ input {
   justify-content: space-around;
 }
 
+.editBookButtonContainer {
+  user-select: none;
+  display: flex;
+  justify-content: space-around;
+}
+
 .addBookButtons {
+  border: none;
+  margin-top: 1em;
+  border-radius: 0.25em;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.editBookButton {
   border: none;
   margin-top: 1em;
   border-radius: 0.25em;
@@ -93,12 +125,16 @@ input[type="checkbox"] {
   background-color: #cb353f;
 }
 
+#cancelEditBook {
+  background-color: #cb353f;
+}
+
 #applyAddBook {
   background-color: var(--green);
 }
 
-.lineItem {
-  color: var(--green);
+#applyEditBook {
+  background-color: var(--green);
 }
 
 #titleInput {
@@ -157,4 +193,16 @@ input[type="checkbox"] {
   height: 20px;
   width: 20px;
   cursor: pointer;
+}
+
+#editTitleInput {
+  background-color: var(--edit);
+}
+
+#editAuthorInput {
+  background-color: var(--edit);
+}
+
+#editPagesInput {
+  background-color: var(--edit);
 }

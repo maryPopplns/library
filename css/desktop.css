@@ -18,7 +18,17 @@
     height: 300px;
   }
 
+  .editForm {
+    width: 500px;
+    height: 300px;
+  }
+
   .lineItem {
+    font-size: 2em;
+    margin: 20px auto;
+  }
+
+  .editItem {
     font-size: 2em;
     margin: 20px auto;
   }

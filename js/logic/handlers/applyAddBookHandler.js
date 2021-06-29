@@ -16,10 +16,10 @@ function applyAddBookHandler(e) {
   const ADD_BOOK = document.querySelector("#addBook");
 
   HEADER.textContent = "Reading List";
-  document.querySelector("#titleInput").value = "";
-  document.querySelector("#authorInput").value = "";
-  document.querySelector("#pagesInput").value = "";
-  document.querySelector("#readInput").checked = false;
+  // document.querySelector("#titleInput").value = "";
+  // document.querySelector("#authorInput").value = "";
+  // document.querySelector("#pagesInput").value = "";
+  // document.querySelector("#readInput").checked = false;
   // ADD_BOOK_CONTAINER.style.display = "none";
   // ADD_BOOK.style.display = "block";
 
