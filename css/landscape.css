@@ -17,4 +17,8 @@
     width: 70vw;
     margin: 10px auto;
   }
+
+  #deleteButtonContainer {
+    margin: 75px auto;
+  }
 }

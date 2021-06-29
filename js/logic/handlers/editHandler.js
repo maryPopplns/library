@@ -1,5 +1,5 @@
 import { renderEdit } from "../../UI/edit.js";
-import { listenersHandlers } from "../listeners/listenersHandlers.js";
+import { editlistenersHandlers } from "../listeners/editListenersHandlers.js";
 import { books } from "../books/bookStore.js";
 
 function editHandler(e) {
@@ -17,7 +17,7 @@ function editHandler(e) {
 
   renderEdit(e);
 
-  listenersHandlers();
+  editlistenersHandlers();
 }
 
 export { editHandler };

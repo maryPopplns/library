@@ -78,4 +78,10 @@
     width: 300px;
     height: 150px;
   }
+
+  #deleteButtonContainer {
+    margin: 200px auto;
+    padding: 30px;
+    border: 3px solid #cb353f;
+  }
 }

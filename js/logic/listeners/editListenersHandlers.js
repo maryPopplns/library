@@ -1,7 +1,7 @@
 import { cancelEditHandler } from "../handlers/cancelEditHandler.js";
 import { applyEditHandler } from "../handlers/applyEditHandler.js";
 
-function listenersHandlers() {
+function editlistenersHandlers() {
   const CANCEL = document.querySelector("#cancelEditBook");
   const APPLY = document.querySelector("#applyEditBook");
 
@@ -9,4 +9,4 @@ function listenersHandlers() {
   APPLY.addEventListener("click", applyEditHandler);
 }
 
-export { listenersHandlers };
+export { editlistenersHandlers };

@@ -29,8 +29,6 @@ function applyEditHandler(e) {
 
   EDIT_FORM.parentNode.removeChild(EDIT_FORM);
 
-  console.log(books);
-
   renderBooks();
 }
 
