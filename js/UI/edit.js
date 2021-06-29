@@ -1,4 +1,9 @@
-function renderEdit() {
+import { books } from "../logic/books/bookStore.js";
+
+function renderEdit(e) {
+  const BOOK_INSTANCE = books
+    .filter((book) => book.count === +e.target.id)
+    .pop();
   const MAIN = document.querySelector("main");
   const EDIT_FORM = document.createElement("form");
   const TITLE_CONTAINER = document.createElement("div");
@@ -55,6 +60,7 @@ function renderEdit() {
     }
     LABELS[i].textContent = ITEMS[i];
   }
+  TITLE_INPUT.setAttribute("data-count", BOOK_INSTANCE.count);
   BUTTON_CONTAINER.setAttribute("class", "editBookButtonContainer");
   CANCEL_EDIT_BOOK.setAttribute("class", "editBookButton");
   CANCEL_EDIT_BOOK.setAttribute("id", "cancelEditBook");
@@ -62,6 +68,10 @@ function renderEdit() {
   APPLY_EDIT_BOOK.setAttribute("id", "applyEditBook");
   CANCEL_EDIT_BOOK.textContent = "Cancel";
   APPLY_EDIT_BOOK.textContent = "Apply";
+  TITLE_INPUT.value = BOOK_INSTANCE.title;
+  AUTHOR_INPUT.value = BOOK_INSTANCE.author;
+  PAGES_INPUT.value = BOOK_INSTANCE.pages;
+  READ_INPUT.checked = BOOK_INSTANCE.read;
 
   MAIN.append(EDIT_FORM);
   for (let i = 0; i < CONTAINERS.length; i++) {

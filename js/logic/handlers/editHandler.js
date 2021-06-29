@@ -3,10 +3,6 @@ import { listenersHandlers } from "../listeners/listenersHandlers.js";
 import { books } from "../books/bookStore.js";
 
 function editHandler(e) {
-  // console.log(e.target.id);
-  // const mine = books.filter((book) => book.count === +e.target.id);
-  // console.log(mine);
-
   const BOOK_CONTAINER_CURRENT = document.querySelector("#bookContainer");
   const ADD_BOOK = document.querySelector("#addBook");
   const HEADER = document.querySelector("#header");
@@ -19,7 +15,7 @@ function editHandler(e) {
   HEADER.style.color = "#e9fb91";
   HR.style.backgroundColor = "#e9fb91";
 
-  renderEdit();
+  renderEdit(e);
 
   listenersHandlers();
 }
