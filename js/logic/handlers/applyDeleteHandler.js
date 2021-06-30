@@ -1,5 +1,6 @@
 import { renderBooks } from "../../UI/books.js";
 import { books } from "../books/bookStore.js";
+import { localStorage } from "../../localStorage.js";
 
 function applyDeleteHandler(event) {
   const ADD_BOOK = document.querySelector("#addBook");
@@ -21,6 +22,7 @@ function applyDeleteHandler(event) {
   HR.style.backgroundColor = "#32e1c1";
 
   renderBooks();
+  localStorage();
 }
 
 export { applyDeleteHandler };

@@ -1,6 +1,7 @@
 import { Book } from "../books/Book.js";
 import { books } from "../books/bookStore.js";
 import { renderBooks } from "../../UI/books.js";
+import { localStorage } from "../../localStorage.js";
 
 let count = 0;
 
@@ -30,6 +31,7 @@ function applyAddBookHandler(e) {
 
   count++;
   renderBooks();
+  localStorage();
 }
 
 export { applyAddBookHandler };

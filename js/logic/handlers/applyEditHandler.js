@@ -1,5 +1,6 @@
 import { books } from "../books/bookStore.js";
 import { renderBooks } from "../../UI/books.js";
+import { localStorage } from "../../localStorage.js";
 
 function applyEditHandler(e) {
   e.preventDefault();
@@ -30,6 +31,7 @@ function applyEditHandler(e) {
   EDIT_FORM.parentNode.removeChild(EDIT_FORM);
 
   renderBooks();
+  localStorage();
 }
 
 export { applyEditHandler };
