@@ -21,6 +21,7 @@ function main() {
   const ADD_BOOK_BUTTON_CONTAINER = document.createElement("div");
   const INPUT_CONTAINERS = [TITLE, AUTHOR, PAGES, READ];
   const IDS = ["title", "author", "pages", "read"];
+  const LABELTEXT = ["title", "author", "pages", "complete"];
   const LABELS = [TITLE_TEXT, AUTHOR_TEXT, PAGES_TEXT, READ_TEXT];
   const INPUTS = [TITLE_INPUT, AUTHOR_INPUT, PAGES_INPUT, READ_INPUT];
 
@@ -42,7 +43,7 @@ function main() {
     }
   }
   for (let i = 0; i < LABELS.length; i++) {
-    LABELS[i].textContent = IDS[i];
+    LABELS[i].textContent = LABELTEXT[i];
   }
   BUTTON.textContent = "Add Book +";
   ADD_BOOK_BUTTON_CONTAINER.setAttribute("class", "addBookButtonContainer");

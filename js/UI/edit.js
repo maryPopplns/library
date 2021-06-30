@@ -42,7 +42,7 @@ function renderEdit(e) {
     "editPagesInput",
     "editReadInput",
   ];
-  const ITEMS = ["title", "author", "pages", "read"];
+  const ITEMS = ["title", "author", "pages", "complete"];
 
   EDIT_FORM.setAttribute("class", "editForm");
   for (let i = 0; i < CONTAINERS.length; i++) {
