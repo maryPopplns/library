@@ -1,1 +1,1 @@
-- I learned that I should create a css file with global settings, then create other css files with specific media queries to fit the various devices
+- gained valuable experience with using modules in js as well as css

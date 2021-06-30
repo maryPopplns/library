@@ -1,5 +1,9 @@
+import { books } from "../books/bookStore.js";
+
 function addBookHandler(e) {
   e.preventDefault();
+
+  console.log(JSON.stringify(books));
 
   const HEADER = document.querySelector("#header");
   const HR = document.querySelector("hr");
